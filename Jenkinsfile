@@ -13,7 +13,6 @@ pipeline {
             steps {
                 // Deploy 2048 code to the server
                 sh """
-                sudo su - root
                 rm -rf /usr/share/nginx/html/index.html
                 cp 2048 /usr/share/nginx/html
                 
