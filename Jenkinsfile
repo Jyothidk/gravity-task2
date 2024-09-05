@@ -1,6 +1,13 @@
 pipeline {
     agent any
 
+    environment {
+        // Define environment variables here (optional)
+        DEPLOY_SERVER = 'jyothirk@52.91.86.30'
+        //DEPLOY_PATH = '/var/www/sample-app'
+    }
+
+
     stages {
         stage('Clone') {
             steps {
