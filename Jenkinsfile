@@ -8,6 +8,7 @@ pipeline {
             steps {
                 // Clone the repository
                 git branch: 'main', url: "https://github.com/Jyothidk/gravity-task2.git"
+                sh "pwd"
             }
         }
 
