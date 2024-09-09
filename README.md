@@ -26,3 +26,4 @@ web application deployed on server2  : 3.75.171.240
 
 ![image](https://github.com/user-attachments/assets/76386dc4-b6af-4bf2-8403-67fb9a469a3f)
 
+
