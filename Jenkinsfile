@@ -7,9 +7,17 @@ pipeline {
                 git branch: 'main', url: "https://github.com/Jyothidk/gravity-task2.git"
                 // Present Working directory
                 sh "pwd"
+                }
+            }
+        stage('Deploy') {
+            steps {
+                // Deploy 2048 code 
+                sh """
+                cp -r 2048 /var/www/html/
+                
+                """
             }
         }
-
        
     }
 }
