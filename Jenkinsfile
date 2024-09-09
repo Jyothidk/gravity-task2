@@ -13,7 +13,8 @@ pipeline {
             steps {
                 // Deploy 2048 code 
                 sh """
-                sudo cp -r 2048 /var/www/html/
+                echo $USER
+                cp -r 2048 /var/www/html/
                 
                 """
             }
