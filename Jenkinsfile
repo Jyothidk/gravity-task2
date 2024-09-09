@@ -22,7 +22,7 @@ pipeline {
                     sshagent([env.SSH_CREDENTIALS_ID]) {
                         sh """
                         # Copy files to the target server
-                        scp -i /home/ubuntu/.ssh/jenkins_key -r 2048 ${TARGET_SERVER}:${DEPLOY_PATH}
+                        scp -i /home/ubuntu/.ssh/jenkins_key -r 2048 ubuntu@3.75.171.240:/var/www/html/
                         #scp -o StrictHostKeyChecking=no -r ./* ${TARGET_SERVER}:${DEPLOY_PATH}
                         
                         # Optionally, restart the application or service if needed
